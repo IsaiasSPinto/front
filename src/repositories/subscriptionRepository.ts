@@ -25,7 +25,7 @@ async function saveSubscrition(subscription: PushSubscription) {
 
   const newData = [...data, newSubscription];
 
-  await fsAsync.writeFile(dbPath, JSON.stringify(data, null, 2));
+  await fsAsync.writeFile(dbPath, JSON.stringify(newData, null, 2));
 }
 
 export { getAllSubscriptions, saveSubscrition };

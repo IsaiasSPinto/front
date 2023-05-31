@@ -17,7 +17,7 @@ app.use(cors());
 app.use(bodyParser.json());
 
 app.get("/", (req, res) => {
-  res.sendFile(path.join(__dirname, "../src/views/index.html"));
+  res.sendFile(path.join("/index.html"));
 });
 
 app.post("/save-subscription", async (req, res) => {
