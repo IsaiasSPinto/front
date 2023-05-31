@@ -1,9 +1,10 @@
 declare global {
   namespace NodeJS {
     interface ProcessEnv {
-      DB_PATH: string;
-      NODE_ENV: "development" | "production";
       PORT: number;
+      VAPID_PRIVATE_KEY: string;
+      VAPID_PUBLIC_KEY: string;
+      DB_PATH: string;
     }
   }
 }
